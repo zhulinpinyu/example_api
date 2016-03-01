@@ -125,12 +125,12 @@ PLATFORMS
 
 DEPENDENCIES
   rails (= 4.2.3)
-  rails-api
+  rails-api (= 0.4.0)
   rspec-rails (~> 3.0)
   shoulda-matchers (= 2.8)
-  spring
-  spring-commands-rspec
-  sqlite3
+  spring (= 1.6.4)
+  spring-commands-rspec (= 1.0.4)
+  sqlite3 (= 1.3.11)
 
 BUNDLED WITH
    1.10.6

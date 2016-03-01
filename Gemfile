@@ -2,12 +2,12 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.2.3'
-gem 'rails-api'
-gem 'sqlite3'
+gem 'rails-api', '0.4.0'
+gem 'sqlite3','1.3.11'
 
 group :development do
-  gem 'spring'
-  gem 'spring-commands-rspec'
+  gem 'spring','1.6.4'
+  gem 'spring-commands-rspec','1.0.4'
 end
 
 group :test do
