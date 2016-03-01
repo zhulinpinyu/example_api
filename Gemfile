@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
 gem 'rails-api'
-gem 'spring', :group => :development
 gem 'sqlite3'
 
 group :development do
@@ -12,7 +11,7 @@ group :development do
 end
 
 group :test do
-  gem 'shoulda-matchers', require: false
+  gem 'shoulda-matchers','2.8', require: false
 end
 
 group :development,:test do
