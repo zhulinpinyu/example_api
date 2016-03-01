@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe CustomersController, type: :controller do
 
+  it_behaves_like "api_controller"
+
   let(:valid_attributes){
     {full_name: "John Ive",email: "john@ive.com",phone: "123456"}
   }
