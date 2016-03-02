@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
   include WardenHelper
+  before_action :authenticate!
 
   rescue_from ActiveRecord::RecordNotFound, with: :not_found
   rescue_from ActionController::ParameterMissing, with: :missing_param_error

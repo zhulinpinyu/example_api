@@ -3,7 +3,6 @@ module WardenHelper
 
   include do
     helper_method :warden, :current_user
-    prepend_before_action :authenticate!
   end
 
   def current_user
