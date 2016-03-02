@@ -1,8 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe CustomersController, type: :controller do
+  before do
+    user = User.create(email: "user@example.com", password: "password")
+    authentication_token = AuthenticationToken.create(user_id: user.id, body: "token", last_used_at: DateTime.current)
+    request.env["HTTP_X_USER_EMAIL"] = user.email
+    request.env["HTTP_X_AUTH_TOKEN"] = authentication_token.body
+  end
 
   it_behaves_like "api_controller"
+  it_behaves_like "authenticated_api_controller"
 
   let(:valid_attributes){
     {full_name: "John Ive",email: "john@ive.com",phone: "123456"}
