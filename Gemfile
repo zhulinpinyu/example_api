@@ -7,6 +7,7 @@ gem 'sqlite3','1.3.11'
 gem 'active_model_serializers', '0.10.0.rc4'
 gem 'bcrypt','~> 3.1.7'
 gem 'has_secure_token', '1.0.0'
+gem 'warden', '~> 1.2.6'
 
 group :development do
   gem 'spring','1.6.4'
