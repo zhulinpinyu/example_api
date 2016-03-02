@@ -5,6 +5,8 @@ gem 'rails', '4.2.3'
 gem 'rails-api', '0.4.0'
 gem 'sqlite3','1.3.11'
 gem 'active_model_serializers', '0.10.0.rc4'
+gem 'bcrypt','~> 3.1.7'
+gem 'has_secure_token', '1.0.0'
 
 group :development do
   gem 'spring','1.6.4'
